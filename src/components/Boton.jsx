@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import './boton.css'
+
  
 const Boton = ({texto,clase,handleClick}) => {
+  //gfg const boton = params
 
-    const [data, setData] = useState({operacion:'', resultado:''})
-
-    const escritura = (event) =>{
-        console.log(event);
-    }
-    
-
-  return (
+    return (
     <button className={clase}onClick={handleClick} >{texto}</button>
   )
 }

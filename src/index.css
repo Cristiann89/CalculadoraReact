@@ -10,13 +10,17 @@
    --secundario: #c8c9cf; /*#4e505f*/
    --terciario: #ffffff; /* #2e2f38*/
    --box-shadow:  0 0 50px rgba(0, 0,0, 0.20);
-   
+}
 
-   background-color: var(--fondo);
+
+body{
+  background-color: var(--fondo);
    color: var(--texo);
-
+   transition: 1000ms;
 
 }
+
+
 *{
   margin:0;
   padding: 0;
@@ -29,5 +33,16 @@
   place-items: center;
 }
 
+[data-theme='oscuro']{
+
+  --fondo: #f1f2f3;
+   --fondo-calculadora: #17171c;
+   --texo:  #ffffff;
+   --primario: #4b5efc;
+   --secundario: #4e505f;
+   --terciario:  #2e2f38;
+   --box-shadow:  0 0 50px rgba(0, 0,0, 0.20);
+
+}
 
 

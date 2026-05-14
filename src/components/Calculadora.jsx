@@ -1,6 +1,7 @@
 import './calculadora.css'
 import Boton from './Boton'
 import { useState } from 'react'
+import Switch from './Switch'
 
 const Calculadora  = () =>{
 
@@ -15,7 +16,7 @@ const Calculadora  = () =>{
         if(valor === '+/-' && data.operacion === '')return
         if(valor === '%' && data.operacion.includes('%'))return
 
-        if(data.operacion.includes('Error')){
+        if(data.operacion.includes('Error')){   
             setData({...data, operacion: valor})
         }else if(data.resultado !== '' && data.operacion === '' && esOperacion){
             setData({...data, operacion: `${data.resultado}` + valor})
@@ -72,8 +73,11 @@ const Calculadora  = () =>{
 
 
 
+
+
     return(
         <main>
+            <Switch />
             <span className="resultado">{data.resultado}</span>
             <span className="display">{data.operacion}</span>
             

@@ -1,1 +1,2 @@
 Este es un proyecto para la cátedra de Desarrollo de software de la facultad, donde tomando ideas de tutoriales se trata de implementar la funcionalidad de una calculadora con las operaciones básicas a través de react, en su utilización de componentes y props, y así mismo poder entender como es que funciona esta libreria.
+git
